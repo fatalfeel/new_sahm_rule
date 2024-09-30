@@ -1,2 +1,4 @@
-# new_sahm_rule
-New Sahm rule predict economic recession
+# New Sahm rule
+The new Sahm rule predicts an economic recession
+    
+Based on the original paper by Pascal Michaillat
