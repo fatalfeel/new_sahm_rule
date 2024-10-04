@@ -5,16 +5,16 @@ import setup
 def run():
 
     # Get vacancy rate for 1929M4–1950M12
-    #D477: D737
+    #D477:D737
     vRate1929 = pd.read_csv(setup.inputFolder + 'HistoricalSeries_JME_2020January.csv', usecols=[3], skiprows=475, nrows=261).values.flatten() / 100
 
     # Get vacancy rate for 1951M1–2000M12
-    #C9: C608
+    #C9:C608
     vRate1951 = pd.read_csv( setup.inputFolder + 'CompositeHWI.xlsx - Sheet1.csv', usecols=[2], skiprows=7, nrows=600).values.flatten() / 100
 
     # Get vacancy rate for 2001M1–2024M7
     # Read vacancy level
-    #B2: B285
+    #B2:B285
     #vLevel2001 = pd.read_csv( setup.inputFolder + 'JTSJOL.csv', usecols=[1], skiprows=0, nrows=284).values.flatten()
     # read to last line
     vLevel2001 = pd.read_csv(setup.inputFolder + 'JTSJOL.csv', usecols=[1], skiprows=0).values.flatten()
